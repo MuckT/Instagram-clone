@@ -6,7 +6,6 @@ import {
     Image, Dimensions
 } from "react-native";
 import {colors} from "~/utils/theme";
-import SvgUri from "react-native-svg-uri";
 import {Avatar} from "react-native-elements";
 import * as Animatable from 'react-native-animatable'
 import Icon from 'react-native-vector-icons/AntDesign'
@@ -139,7 +138,7 @@ class PostItem extends React.Component<IPostItemProps> {
                             <Text style={styles.postAuthor}>{author}</Text>
                         </View>
                         <TouchableOpacity style={{alignSelf: 'flex-end', flex: 1}}>
-                            <SvgUri source={require('~/assets/svg/more.svg')} style={styles.buttonMore}/>
+                            <Image source={require('~/assets/images/more.png')} style={styles.buttonMore}/>
                         </TouchableOpacity>
                     </View>
                     <View style={{paddingLeft: isText ? 20 : 0,justifyContent: 'center',

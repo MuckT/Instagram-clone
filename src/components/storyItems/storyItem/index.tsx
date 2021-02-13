@@ -1,5 +1,5 @@
 import React from 'react'
-import {StyleSheet, TouchableOpacity, View , Text} from "react-native";
+import {StyleSheet, TouchableOpacity, View , Text, Image} from "react-native";
 import {Avatar} from 'react-native-elements';
 import {colors} from "~/utils/theme";
 import LinearGradient from "react-native-linear-gradient";
@@ -17,7 +17,7 @@ const StoryItem: React.StatelessComponent = (props:any) => {
                             source={require('~/assets/images/ic11.png')}
                     />
                     <View style={styles.btnPlusBg}>
-                        <SvgUri  style={styles.btnPlus} source={require('~/assets/svg/plus.svg')}/>
+                        <Image style={styles.btnPlus} source={require('~/assets/images/plus.png')}/>
                     </View>
 
                 </View>
