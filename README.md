@@ -56,7 +56,11 @@ $ npm install
 $ npx react-native start
 ```
 
-In Another window
+Wait for dep graph to load
+
+In Android Studio start a device to emulate on.
+
+After the emulator starts in Another command prompt run the following commands
 
 ```bash
 $ cd InstagramClone
