@@ -13,7 +13,7 @@ class ImageItem extends React.PureComponent<any,any> {
     super(props)
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     var { width } = Dimensions.get('window');
     var { imageMargin, imagesPerRow, containerWidth } = this.props;
 

@@ -23,7 +23,7 @@ export default class Add extends React.PureComponent<any,any> {
         };
     }
 
-    componentWillReceiveProps(nextProps: any) {
+    UNSAFE_componentWillReceiveProps(nextProps: any) {
         const {activeIndex} = this.state;
         if (activeIndex > 0) {
             this.swiper.scrollBy(activeIndex * -1); //offset

@@ -96,7 +96,7 @@ export default class ProfileTab extends Component {
         }
     };
 
-    componentWillMount() {
+    UNSAFE_componentWillMount() {
 
     }
 

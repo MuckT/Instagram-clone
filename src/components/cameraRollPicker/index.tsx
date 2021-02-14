@@ -25,11 +25,11 @@ class CameraRollPicker extends React.PureComponent<any, any> {
         };
     }
 
-    componentWillMount() {
+    UNSAFE_componentWillMount() {
         this.fetch();
     }
 
-    componentWillReceiveProps(nextProps: any) {
+    UNSAFE_componentWillReceiveProps(nextProps: any) {
         this.setState({
             selected: nextProps.selected,
         });
